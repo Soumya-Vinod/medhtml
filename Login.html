@@ -6,13 +6,15 @@
 	</head>
 	<body>
 		<script>
-			function myFunction(){
-				 let  name = document.getElementById("Email").value;
-				 let pass = document.getElementById("pass").value;
-				alert(name);
+			function myFunction(event){
+                event.preventDefault()
+				let  name = document.getElementById("Email").value;
+				let pass = document.getElementById("pass").value;
+				
 				if(name == "Admin" && pass == "root" && ch1.checked )
 				{
-					alert("Valid ");
+					/*alert("Valid ");*/
+                    window.location.replace("main.html");
 				}
 				else{
 					alert("Invalid ");
@@ -40,7 +42,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td><input type="button" value="LOGIN" onclick="myFunction()">
+						<td><input type="button" value="LOGIN" onclick="myFunction(event)">
 						</td>
 					</tr> 
 				</table>
