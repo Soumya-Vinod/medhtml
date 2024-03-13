@@ -1,9 +1,27 @@
-.Gender {
-    margin-right: 100px;
+table {
+    border:2px solid green;
+    width: 100%;
+    margin-right: 20px;
+  }
+input[type="button"]{
+    width:105%;
+    color:blue;
+    padding:10px 5px;
+    background:green;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    border:none;
+    box-shadow:1px 1px 1px 1px white;
+    border-radius:3px;
 }
-.d{
-    margin-right: 150px;
+input[type="button"]:hover
+{
+    background:honeydew;
 }
-form {
-    margin-right: 100px;
+
+#b1{
+    font-size:30px;
+    color: black;
 }
+
