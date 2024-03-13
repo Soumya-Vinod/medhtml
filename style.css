@@ -1,5 +1,5 @@
 body{
-    background:url('desktop-wallpaper-best-soothing-background-calming-nature.jpg');
+    background:url('img1.jpg');
     background-size:100%;
 }
 .login{	
@@ -16,7 +16,7 @@ body{
     width:100%;
 }
 input[type="email"],input[type="password"]{
-    width:100%;
+    width:10px;
     padding:10px;
     font-size:16px;
     background:none;
@@ -44,7 +44,8 @@ input[type="button"]{
     border-radius:3px;
 }
 #b1{
-    font-size:20px;
+    font-size:30px;
+    color: honeydew;
 }
 td,th{
     padding: 10px;

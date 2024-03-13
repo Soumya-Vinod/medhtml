@@ -10,7 +10,7 @@
 				 let  name = document.getElementById("Email").value;
 				 let pass = document.getElementById("pass").value;
 				alert(name);
-				if(name == "Admin" && pass == "root" )
+				if(name == "Admin" && pass == "root" && ch1.checked )
 				{
 					alert("Valid ");
 				}
@@ -27,20 +27,20 @@
 						<th><b id="b1">LOGIN WINDOW</b></th>
 					</tr>
 					<tr>
-						<td><input type="text" id="Email" placeholder="Your Email Address" width="45" height="40" /></td>
+						<td><input type="text" id="Email" placeholder="Your Email Address" size="50" /></td>
 					</tr>
 					<tr>
-						<td><input type="text" id="pass" placeholder="Your Password"/></td>
+						<td><input type="text" id="pass" placeholder="Your Password" size="50"/></td>
 					</tr>
 					<tr>
 						<td>
 						<br/>
-							<input id="ch1" type="checkbox" placeholder="Your Password"/><label for="ch1">Agree With</label>
+							<input id="ch1" name = "ch1" type="checkbox" placeholder="Your Password"/><label for="ch1">Agree With</label>
 							<a href="#">Terms & Condition</a>
 						</td>
 					</tr>
 					<tr>
-						<td><input type="button" value="click" onclick="myFunction()">
+						<td><input type="button" value="LOGIN" onclick="myFunction()">
 						</td>
 					</tr> 
 				</table>
