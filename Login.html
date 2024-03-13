@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title> Modern Login Window : CSS lab Assignment</title>
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	<body>
+		<script>
+			function myFunction(){
+				 let  name = document.getElementById("Email").value;
+				 let pass = document.getElementById("pass").value;
+				alert(name);
+				if(name == "Admin" && pass == "root" )
+				{
+					alert("Valid ");
+				}
+				else{
+					alert("Invalid ");
+				}
+			}
+		</script>
+		<div class="login">
+			<div class="profile"><img src="woman-doctor-icon-doctor-woman-with-stereoscopic-glyph-isolated-blue-background-vector.jpg"/></div>
+			<form>
+				<table>
+					<tr>
+						<th><b id="b1">LOGIN WINDOW</b></th>
+					</tr>
+					<tr>
+						<td><input type="text" id="Email" placeholder="Your Email Address" width="45" height="40" /></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="pass" placeholder="Your Password"/></td>
+					</tr>
+					<tr>
+						<td>
+						<br/>
+							<input id="ch1" type="checkbox" placeholder="Your Password"/><label for="ch1">Agree With</label>
+							<a href="#">Terms & Condition</a>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="button" value="click" onclick="myFunction()">
+						</td>
+					</tr> 
+				</table>
+			</form>
+           
+		</div>
+	</body>
+</html>
