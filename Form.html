@@ -165,17 +165,20 @@
                 <option value="92">1921</option>
                 <option value="93">1920</option>
             </select><br><br></td></tr>
-            <tr><td><span class="Gender">Gender</span></td>
-            <td><span class="Phone No">Phone No</span><br></td></tr>
-            <tr><td><select name="Gender" id="Gender">
+            <tr><td colspan="2"><span class="Gender">Gender</span></td></tr>
+            <tr><td colspan="2"><select name="Gender" id="Gender">
                 <option value="0">Please select.........</option>
                 <option value="1">Male</option>
                 <option value="2">Female</option>
                 <option value="3">Others</option>
-            </select></td>
-            <td><span class = "sp">
-                <input type="text" id="Phone" name="Phone"><br><br>
-            </span></td></tr>
+            </select></td></tr>
+            <tr><td><span class="Phone No">Phone No</span><br></td></tr>
+            
+            <tr><td>
+                <span class = "sp">
+                    <input type="text" id="Phone" name="Phone"><br><br>
+                </span>
+            </td></tr>
             <tr><td><label for="Address">Address :</label><br></td></tr>
             <tr><td><input type="text" id="Address" name="Address :"><br></td></tr>
             <tr><td><span class = "small">Street Address</span><br><br></td></tr>
@@ -267,5 +270,14 @@
                 <tr><td><input type="button" value="BOOK APPOINTMENT" onclick="myFunction(event)"></td></tr>
             </table>
         </form>
+        <script>
+            function myFunction(event)
+            {
+                event.preventDefault()
+                alert("Your appointment has been booked");
+                window.location.replace("main.html");
+				
+			}
+        </script>
     </body>
 </html>
