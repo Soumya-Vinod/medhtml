@@ -1,5 +1,12 @@
-table {
-    border:2px solid green;
+body{
+    background-color: darkblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form{
+    background-color: aliceblue;
+}
+table,td,tr {
     width: 100%;
     margin-right: 20px;
   }
@@ -17,7 +24,16 @@ input[type="button"]{
 }
 input[type="button"]:hover
 {
-    background:honeydew;
+    background:darkseagreen;
+}
+
+input[type = "text"]{
+    width:  100px;
+    height: max-content;
+}
+input[type="text"]:hover
+{
+    background:grey;
 }
 
 #b1{
