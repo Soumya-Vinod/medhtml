@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2</title>
+</head>
+<body>
+    <form><hr>
+       <center><h1> Enquiry form</h1></center>
+        <center> <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br></center>
+        <center><label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br></center>
+        <center><label for="email"> Email</label>
+            <input type="text" id="email" name="email"><br><br></center>
+        <center><label for="phnnumber"> phone Number</label>
+            <input type="text" id="phnnumber" name="phnnumber"><br><br></center>
+            
+        <center><tr><td><span class="hospital">Hospital</span></td>
+                <tr><td><select name="Hospital" id="Hospital">
+                    <option value="0">Please select.........</option>
+                    <option value="1">Apollo</option>
+                    <option value="2">MGM</option>
+                    <option value="3">Metro</option>
+                </select></td><br><br></center>   
+                
+         <center><tr><td><input type="button" value="Enquiry now" onclick="myFunction(event)"></td></tr>
+            </table></center>
+        </form>
+        <script>
+            function myFunction(event)
+            {
+                event.preventDefault()
+                alert("Your enquiry has been done");
+                window.location.replace("cardio.html");
+				
+			}
+        </script>
+            
+    
+</body>
+</html>
