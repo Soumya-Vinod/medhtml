@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOME</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="st.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+        <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+      </div>
+
+      <div class="w3-col s3">
+        <a href="main.html"><i class="fa fa-circle-o-notch"></i></a>
+      </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open 24 hrs</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-black">Visit our nearest hospital for checkups</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT MEDEASE NAVIGATOR</span></h5>
+    <p>Established by Students of BCA Second Year in 2024, MedEase Healthcare has a robust presence across the healthcare ecosystem. From routine wellness & preventive health care to innovative life-saving treatments and diagnostic services, MedEase Hospitals has touched more than 100 million lives from over 120 countries</p>
+    <p>“Bringing healthcare of International standards within the reach of every individual.”</p>
+    <p>MedEase Group constitutes the best hospital in India with over 10,000 beds across 73 hospitals, 5000+ pharmacies, over 300 clinics, 1100+ diagnostic centres and 200+ Telemedicine units.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Where health meets happiness" </i></p>
+      <p>BCA Students offer the best and affordable service as we spread our wings all across India</p>
+    </div>
+    <img src="phy.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> 24 hrs service</p>
+    <p><strong>Available:</strong> Nerul, Thane, Pune, Bandra, Kolkata, Kochi, Bengaluru, Hydrabad.</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE SERVICES</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Healtcare Divisions</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Services</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Diabetes Care</h5>
+      <p class="w3-text-grey">Specialized doctor deal with your health as we understand the critcality of diabities</p><br>
+    
+      <h5>Liver Care</h5>
+      <p class="w3-text-grey">Liver health is an important aspect of our Physical well being and we make sure to provide with top notch facilities for the  same</p><br>
+    
+      <h5>Pain relief</h5>
+      <p class="w3-text-grey">Specialized doctor deal with your health as we understand the critcality of Pain Relief</p><br>
+    
+      <h5>Oral Health</h5>
+      <p class="w3-text-grey">Oral health is an important aspect of our Physical well being and we make sure to provide with top notch facilities for the  same</p><br>
+    
+      <h5>Cardio Health</h5>
+      <p class="w3-text-grey">Specialized doctor deal with your health as we understand the critcality of Cardio health</p>
+
+      <h5>Intestinal Health</h5>
+      <p class="w3-text-grey">Intestinal health is an important aspect of our Physical well being and we make sure to provide with top notch facilities for the  same</p>
+
+      <h5>Sexual Health</h5>
+      <p class="w3-text-grey">Specialized doctor deal with your health as we understand the critcality of Sexual Health</p>
+
+      <h5>Elderly Health</h5>
+      <p class="w3-text-grey">Specialized doctor deal with your health as we understand the critcality of Elderly Health</p>
+
+      <h5>Immunity</h5>
+      <p class="w3-text-grey">Immunity is an important aspect of our Physical well being and we make sure to provide with top notch facilities for the  same</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Medical Checkup</h5>
+      <p class="w3-text-grey">Rs 100 [for children under the age 10 medical checkup is free]</p><br>
+    
+      <h5>Doctor Checkup</h5>
+      <p class="w3-text-grey">Depends on the doctor you visit</p><br>
+    
+      <h5>Result Analysis</h5>
+      <p class="w3-text-grey">Rs 500</p><br>
+    
+      <h5>Appointment</h5>
+      <p class="w3-text-grey">Rs 100 + Doctor fee[depends on the doctor you visit]</p><br>
+    
+    </div>  
+    <img src="new.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">MEADEASENAVIGATOR</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

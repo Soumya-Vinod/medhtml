@@ -29,6 +29,11 @@ input[type="button"]:hover
 
 input[type = "text"]{
     width:  100px;
+    height: max-content;
+}
+input[type="text"]:hover
+{
+    background:grey;
 }
 
 #b1{
