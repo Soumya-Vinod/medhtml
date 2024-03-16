@@ -9,6 +9,7 @@ form{
 table,td,tr {
     width: 100%;
     margin-right: 20px;
+    font-size: large;
   }
 input[type="button"]{
     width:105%;
@@ -29,6 +30,11 @@ input[type="button"]:hover
 
 input[type = "text"]{
     width:  100px;
+    height: max-content;
+}
+input[type="text"]:hover
+{
+    background:grey;
 }
 
 #b1{
