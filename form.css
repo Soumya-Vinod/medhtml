@@ -1,6 +1,7 @@
 body{
     background-color: darkblue;
     font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
 }
 
 form{
@@ -9,7 +10,7 @@ form{
 table,td,tr {
     width: 100%;
     margin-right: 20px;
-    font-size: large;
+    font-size: larger;
   }
 input[type="button"]{
     width:105%;
@@ -29,7 +30,6 @@ input[type="button"]:hover
 }
 
 input[type = "text"]{
-    width:  100px;
     height: max-content;
 }
 input[type="text"]:hover
