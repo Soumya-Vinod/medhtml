@@ -51,7 +51,7 @@
                     <option value="29">West Bengal</option>
                 </select></td><br><br>
                 
-         <tr><td><input type="button" value="Enquiry now" onclick="history.back()"></td></tr>
+         <tr><td><input type="button" value="Enquiry now" onclick="myFunction(event)"></td></tr>
             </table>
         </form>
         <script>
@@ -59,7 +59,7 @@
             {
                 event.preventDefault()
                 alert("Your enquiry has been done");
-                window.location.replace("cardio.html");
+                history.back()
 				
 			}
         </script>
