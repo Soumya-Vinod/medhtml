@@ -3,67 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form2</title>
+    <title>Document</title>
+    <style>
+
+        /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=button] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    </style>
 </head>
 <body>
-    <form><hr>
-     <h1> Enquiry form</h1>
-         <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname"><br><br>
-        <label for="email"> Email</label>
-            <input type="text" id="email" name="email"><br><br>
-        <label for="phnnumber"> phone Number</label>
-            <input type="text" id="phnnumber" name="phnnumber"><br><br>
-            
-        <tr><td><span class="hospital">State</span></td>
-                <tr><td><select name="State" id="State">
-                    <option value="0">Please select.........</option>
-                    <option value="1">Andhra Pradesh</option>
-                    <option value="2">Arunachal Pradesh</option>
-                    <option value="3">Assam</option>
-                    <option value="4">Bihar</option>
-                    <option value="5">Chattisghar</option>
-                    <option value="6">Goa</option>
-                    <option value="7">Gujrat</option>
-                    <option value="8">Haryana</option>
-                    <option value="9">Himachal Pradesh</option>
-                    <option value="10">Jharkhand</option>
-                    <option value="11">Karnataka</option>
-                    <option value="12">Kerala</option>
-                    <option value="13">Madhya Pradesh</option>
-                    <option value="14">Maharashtra</option>
-                    <option value="15">Manipur</option>
-                    <option value="16">Meghalaya</option>
-                    <option value="17">Mizoram</option>
-                    <option value="18">Nagaland</option>
-                    <option value="19">Odisha</option>
-                    <option value="20">Punjab</option>
-                    <option value="21">Rajasthan</option>
-                    <option value="22">Sikkim</option>
-                    <option value="23">Tamil Nadu</option>
-                    <option value="24">Telengana</option>
-                    <option value="25">Gujrat</option>
-                    <option value="26">Tripura</option>
-                    <option value="27">Uttrakhand</option>
-                    <option value="28">Uttar Pradesh</option>
-                    <option value="29">West Bengal</option>
-                </select></td><br><br>
-                
-         <tr><td><input type="button" value="Enquiry now" onclick="myFunction(event)"></td></tr>
-            </table>
-        </form>
-        <script>
-            function myFunction(event)
+    
+<div class="container">
+    <form>
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="email"> Email</label>
+      <input type="text" id="email" name="email">
+  <label for="phnnumber"> Phone Number</label>
+      <input type="text" id="phnnumber" name="phnnumber">
+
+  
+      <label for="country">State</label>
+      <select id="country" name="state">
+        <option value="18">Nagaland</option>
+        <option value="19">Odisha</option>
+        <option value="20">Punjab</option>
+        <option value="21">Rajasthan</option>
+        <option value="22">Sikkim</option>
+        <option value="23">Tamil Nadu</option>
+        <option value="24">Telengana</option>
+        <option value="25">Gujrat</option>
+        <option value="26">Tripura</option>
+        <option value="27">Uttrakhand</option>
+        <option value="28">Uttar Pradesh</option>
+        <option value="29">West Bengal</option>
+        <option value="1">Andhra Pradesh</option>
+        <option value="2">Arunachal Pradesh</option>
+        <option value="3">Assam</option>
+        <option value="4">Bihar</option>
+        <option value="5">Chattisghar</option>
+        <option value="6">Goa</option>
+        <option value="7">Gujrat</option>
+        <option value="8">Haryana</option>
+        <option value="9">Himachal Pradesh</option>
+        <option value="10">Jharkhand</option>
+        <option value="11">Karnataka</option>
+        <option value="12">Kerala</option>
+        <option value="13">Madhya Pradesh</option>
+        <option value="14">Maharashtra</option>
+        <option value="15">Manipur</option>
+        <option value="16">Meghalaya</option>
+        <option value="17">Mizoram</opti
+    
+
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+  
+      <input type="button" value="Enquiry" onclick="myFunction(event)">
+  
+    </form>
+  </div>
+
+  <script>
+    function myFunction(event)
             {
                 event.preventDefault()
                 alert("Your enquiry has been done");
                 history.back()
-				
-			}
-        </script>
-            
-    
+                
+            }
+</script>
 </body>
 </html>
