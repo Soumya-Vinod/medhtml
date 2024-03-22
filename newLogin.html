@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+	<head>
+		<title> MEDEASE LOGIN</title>
+		<style type="text/css">
+			body{
+				background:url('blue.avif');
+				background-size:100%;
+			}
+			.login{	
+				width:380px;
+				height:310px;
+				background:black;
+				margin:auto;
+				margin-top:100px;
+				border-radius:5px;
+				color:aliceblue;
+				padding:50px;
+			}
+			.login table{
+				width:100%;
+			}
+			input[type="email"],input[type="password"]{
+				width:100%;
+				padding:10px;
+				font-size:16px;
+				background:none;
+				border:0;
+				border-bottom:2px solid white;
+				color:white;
+			}
+			input[type="email"]:focus,input[type="password"]:focus{
+				border:0;
+				border-bottom:2px solid white;
+			}
+			a{
+			color:white;
+			}
+			input[type="button"]{
+				width:105%;
+				color:blue;
+				padding:10px 5px;
+				background:green;
+				color:white;
+				font-size:18px;
+				font-weight:bold;
+				border:none;
+				box-shadow:1px 1px 1px 1px white;
+				border-radius:3px;
+			}
+			#b1{
+				font-size:20px;
+			}
+			td,th{
+				padding: 10px;
+			}
+			input[type="button"]:hover
+			{
+				background:rgb(3, 202, 252);
+			}
+			.profile
+			{
+				width:150px;
+				height:150px;
+				margin:auto;
+				margin-top:-100px;
+				
+			}
+			.profile img
+			{
+				width:150px;
+				height:150px;
+				border-radius:50%;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="login">
+			<div class="profile"><img src="woman-doctor-icon-doctor-woman-with-stereoscopic-glyph-isolated-blue-background-vector.jpg"/></div>
+			<form>
+				<table>
+					<tr>
+						<th><b id="b1">LOGIN WINDOW</b></th>
+					</tr>
+					<tr>
+						<td><input type="email"  id="Email" placeholder="Your Email Address"/></td>
+					</tr>
+					<tr>
+						<td><input type="password" id="pass" placeholder="Your Password"/></td>
+					</tr>
+					<tr>
+						<td>
+						<br/>
+							<input id="ch1" type="checkbox" placeholder="Your Password"/><label for="ch1">Agree With</label>
+							<a href="#">Terms & Condition</a>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="button" value="Login"  onclick="myFunction(event)"/></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+        <script>
+			function myFunction(event){
+                event.preventDefault()
+				let  name = document.getElementById("Email").value;
+				let pass = document.getElementById("pass").value;
+				
+				if(name == "Admin" && pass == "root" && ch1.checked )
+				{
+					/*alert("Valid ");*/
+                    window.location.replace("main.html");
+				}
+				else{
+					alert("Invalid ");
+				}
+			}
+		</script>
+
+	</body>
+</html>
