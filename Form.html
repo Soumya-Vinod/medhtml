@@ -160,12 +160,20 @@ input[type=button]:hover {
 
   <script>
     function myFunction(event)
-            {
-                event.preventDefault()
-                alert("Your enquiry has been done");
-                history.back()
-                
-            }
-</script>
+    {
+      event.preventDefault()
+      var t=document.getElementById('phnnumber').value;
+      var n = document.getElementById('fname').value;
+
+       if(t!="" && n!="")
+      {
+        alert(n+" YOUR APPOINTMENT HAS BEEN BOOKED");
+        history.back()
+      }
+      else{
+        alert("Please fill in your Name and Mobile No. ")
+      }                
+     }
+  </script>
 </body>
 </html>
